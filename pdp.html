@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pedro — Product Details | Nomster</title>
+<meta name="description" content="Pedro mechanical pet feeder by Nomster — full product details, technical specs, and preorder." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { sans: ['Nunito', 'sans-serif'] },
+        colors: {
+          coral: { 500: '#FF6B4A', 600: '#F0532F' },
+          cream: { 50: '#FFF8F1' }
+        }
+      }
+    }
+  }
+</script>
+</head>
+<body class="font-sans text-stone-800 bg-cream-50">
+
+<header class="sticky top-0 z-50 bg-cream-50/90 backdrop-blur border-b border-stone-200">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-4">
+    <a href="index.html" class="text-2xl font-extrabold text-coral-600">Nomster 🐾</a>
+    <button id="menuBtn" class="sm:hidden text-stone-700" aria-label="Toggle menu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <div id="navLinks" class="hidden sm:flex gap-8 font-semibold text-stone-600">
+      <a href="index.html#waitlist" class="hover:text-coral-600">Waitlist</a>
+      <a href="#specs" class="hover:text-coral-600">Specs</a>
+      <a href="#preorder" class="hover:text-coral-600">Preorder</a>
+    </div>
+  </nav>
+  <div id="mobileMenu" class="hidden sm:hidden flex flex-col gap-4 px-6 pb-4 font-semibold text-stone-600">
+    <a href="index.html#waitlist" class="hover:text-coral-600">Waitlist</a>
+    <a href="#specs" class="hover:text-coral-600">Specs</a>
+    <a href="#preorder" class="hover:text-coral-600">Preorder</a>
+  </div>
+</header>
+
+<!-- Product gallery -->
+<section class="max-w-6xl mx-auto px-4 sm:px-6 py-10 grid md:grid-cols-2 gap-8">
+  <div>
+    <!-- PRODUCT IMAGE PLACEHOLDER: main image, replace with assets/img/pedro-main.jpg -->
+    <div class=" bg-stone-200 rounded-2xl border-2 border-dashed border-stone-300 flex items-center justify-center text-stone-400 font-semibold mb-4">
+        <video src="assets/promo.mp4#t=00:00:00,00:57:00" autoplay loop muted width="100%" class="rounded-2xl">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="grid grid-cols-4 gap-3">
+      <div class="bg-stone-200 rounded-lg border-2 border-dashed border-stone-300 flex items-center justify-center text-stone-400 text-xs">
+        <img src="assets/3.png" alt="">
+      </div>
+      <div class="bg-stone-200 rounded-lg border-2 border-dashed border-stone-300 flex items-center justify-center text-stone-400 text-xs">
+        <img src="assets/2.png" alt="">
+      </div>
+      <div class="bg-stone-200 rounded-lg border-2 border-dashed border-stone-300 flex items-center justify-center text-stone-400 text-xs">
+        <img src="assets/8.png" alt="">
+      </div>
+      <div class="bg-stone-200 rounded-lg border-2 border-dashed border-stone-300 flex items-center justify-center text-stone-400 text-xs">
+        <img src="assets/9.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div>
+    <span class="inline-block bg-coral-500/10 text-coral-600 font-bold text-sm px-3 py-1 rounded-full mb-3">Preorder open</span>
+    <h1 class="text-3xl sm:text-4xl font-extrabold mb-3">Pedro Mechanical Pet Feeder</h1>
+    <p class="text-stone-600 mb-6">Pedro keeps mealtime dead simple for your cat or dog. Turn the portion knob to set how much drops, turn the timing knob to set how often — that's the whole setup. Built to run reliably off mains power, day after day.</p>
+    <ul class="space-y-2 mb-8 text-stone-700">
+      <li class="flex gap-2"><span class="text-coral-600">✓</span> Dial-turn portion control, no guesswork</li>
+      <li class="flex gap-2"><span class="text-coral-600">✓</span> Dial-turn feeding schedule knob</li>
+      <li class="flex gap-2"><span class="text-coral-600">✓</span> Feeds kibble of almost any size, small to large</li>
+      <li class="flex gap-2"><span class="text-coral-600">✓</span> Rock-solid mains power — no charging, no syncing</li>
+    </ul>
+    <a href="#preorder" class="inline-block bg-coral-600 hover:bg-coral-500 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition">Preorder Pedro</a>
+  </div>
+</section>
+
+<!-- Technical specs -->
+<section id="specs" class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+  <h2 class="text-3xl font-extrabold text-center mb-10">Technical Specs</h2>
+  <div class="bg-white rounded-2xl border border-stone-200 shadow overflow-hidden">
+    <table class="w-full text-left">
+      <tbody class="divide-y divide-stone-200">
+        <tr><td class="px-6 py-4 font-semibold text-stone-500 w-1/3">Dimensions</td><td class="px-6 py-4">28 × 22 × 38 cm</td></tr>
+        <tr><td class="px-6 py-4 font-semibold text-stone-500">Weight</td><td class="px-6 py-4">2.8 kg</td></tr>
+        <tr><td class="px-6 py-4 font-semibold text-stone-500">Food Capacity</td><td class="px-6 py-4">4 L dry food</td></tr>
+        <tr><td class="px-6 py-4 font-semibold text-stone-500">Power</td><td class="px-6 py-4">Standard mains adapter, continuous power</td></tr>
+        <tr><td class="px-6 py-4 font-semibold text-stone-500">Controls</td><td class="px-6 py-4">Manual dials for portion size and feeding interval</td></tr>
+        <tr><td class="px-6 py-4 font-semibold text-stone-500">Food Compatibility</td><td class="px-6 py-4">Small to large kibble sizes</td></tr>
+        <tr><td class="px-6 py-4 font-semibold text-stone-500">Materials</td><td class="px-6 py-4">Food-grade ABS plastic, BPA-free</td></tr>
+        <tr><td class="px-6 py-4 font-semibold text-stone-500">In the Box</td><td class="px-6 py-4">Pedro unit, power adapter, quick-start guide</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Preorder form -->
+<section id="preorder" class="max-w-2xl mx-auto px-4 sm:px-6 py-16">
+  <div class="bg-white rounded-2xl shadow-xl border border-stone-200 p-8 sm:p-10">
+    <h2 class="text-2xl font-extrabold mb-2 text-center">Preorder Pedro</h2>
+    <p class="text-stone-600 text-center mb-6">Reserve your spot — no payment required now. We'll email you when it's time to complete your order.</p>
+    <!-- Formspree endpoint: replace YOUR_FORMSPREE_ID_PREORDER with your real Formspree form ID -->
+    <form action="https://formspree.io/f/mrpzppqw" method="POST" class="flex flex-col gap-4">
+      <input type="hidden" name="source" value="preorder" />
+      <label class="sr-only" for="po-name">Name</label>
+      <input id="po-name" type="text" name="name" placeholder="Your name" required
+        class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-coral-500" />
+      <label class="sr-only" for="po-email">Email</label>
+      <input id="po-email" type="email" name="email" placeholder="you@example.com" required
+        class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-coral-500" />
+      <label class="sr-only" for="po-phone">Phone number</label>
+      <input id="po-phone" type="tel" name="phone" placeholder="Phone number"
+        class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-coral-500" />
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label class="sr-only" for="po-qty">Quantity</label>
+          <input id="po-qty" type="number" name="quantity" min="1" value="1" required
+            class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-coral-500" />
+        </div>
+        <div>
+          <label class="sr-only" for="po-color">Color</label>
+          <select id="po-color" name="color"
+            class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-coral-500">
+            <option value="cream">Cream</option>
+            <option value="coral">Coral</option>
+            <option value="charcoal">Charcoal</option>
+            <option value="forest-green">Forest Green</option>
+            <option value="lavender">Lavender</option>
+            <option value="nuclear-red">Nuclear Red</option>
+            <option value="atomic-pink">Atomic Pink</option>
+            <option value="bahama-yellow">Bahama Yellow</option>
+            <option value="royal-blue">Royal Blue</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit"
+        class="bg-coral-600 hover:bg-coral-500 text-white font-bold py-3 rounded-xl shadow transition">Reserve My Pedro</button>
+    </form>
+  </div>
+</section>
+
+<footer class="bg-stone-900 text-stone-300">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 grid sm:grid-cols-3 gap-8">
+    <div>
+      <p class="text-xl font-extrabold text-white mb-2">Nomster 🐾</p>
+      <p class="text-sm">First product: Pedro</p>
+    </div>
+    <div>
+      <p class="font-bold text-white mb-2">Contact</p>
+      <p class="text-sm">+91 6388004370</p>
+      <p class="text-sm">Bengaluru, India</p>
+    </div>
+    <div>
+      <p class="font-bold text-white mb-2">Legal</p>
+      <ul class="text-sm space-y-1">
+        <li><a href="tnc.html" class="hover:text-coral-500">Terms &amp; Conditions</a></li>
+        <li><a href="privacy.html" class="hover:text-coral-500">Privacy Policy</a></li>
+        <li><a href="legal.html" class="hover:text-coral-500">Legal</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-stone-800 text-center text-sm py-4">
+    © 2026 Nomster. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+</script>
+</body>
+</html>

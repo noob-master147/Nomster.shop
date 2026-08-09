@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nomster — Pedro Pet Feeder | Shop</title>
+<meta name="description" content="Nomster is a pet-care store launching with Pedro, a mechanical dry-food pet feeder with adjustable portion and timing knobs. Join the waitlist for early access." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { sans: ['Nunito', 'sans-serif'] },
+        colors: {
+          coral: { 500: '#FF6B4A', 600: '#F0532F' },
+          cream: { 50: '#FFF8F1' }
+        }
+      }
+    }
+  }
+</script>
+</head>
+<body class="font-sans text-stone-800 bg-cream-50">
+
+<!-- Nav -->
+<header class="sticky top-0 z-50 bg-cream-50/90 backdrop-blur border-b border-stone-200">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-4">
+    <a href="index.html" class="text-2xl font-extrabold text-coral-600">Nomster 🐾</a>
+    <button id="menuBtn" class="sm:hidden text-stone-700" aria-label="Toggle menu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <div id="navLinks" class="hidden sm:flex gap-8 font-semibold text-stone-600">
+      <a href="pdp.html" class="hover:text-coral-600">Product</a>
+      <a href="#waitlist" class="hover:text-coral-600">Waitlist</a>
+      <a href="pdp.html#preorder" class="hover:text-coral-600">Preorder</a>
+    </div>
+  </nav>
+  <div id="mobileMenu" class="hidden sm:hidden flex flex-col gap-4 px-6 pb-4 font-semibold text-stone-600">
+    <a href="pdp.html" class="hover:text-coral-600">Product</a>
+    <a href="#waitlist" class="hover:text-coral-600">Waitlist</a>
+    <a href="pdp.html#preorder" class="hover:text-coral-600">Preorder</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20 grid md:grid-cols-2 gap-10 items-center">
+  <div>
+    <span class="inline-block bg-coral-500/10 text-coral-600 font-bold text-sm px-3 py-1 rounded-full mb-4">Nomster's first product</span>
+    <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">Meet Pedro, feeding made simple.</h1>
+    <p class="text-lg text-stone-600 mb-6">A sturdy, no-fuss dry-food feeder you set once and trust every day. Two honest mechanical knobs handle portions and timing — plug it in, dial it in, done.</p>
+    <a href="#waitlist" class="inline-block bg-coral-600 hover:bg-coral-500 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition">Join the Waitlist</a>
+  </div>
+  <!-- HERO VIDEO PLACEHOLDER: replace src with real file, e.g. /assets/video/pedro-hero.mp4 -->
+  <div class="aspect-video bg-stone-200 rounded-2xl flex items-center justify-center border-2 border-dashed border-stone-300">
+    <video src="assets/gif.mp4" autoplay loop muted width="100%" class="rounded-2xl">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+<!-- Banner: value props -->
+<section class="bg-coral-600 text-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+    <div><p class="text-3xl font-extrabold">4L</p><p class="text-sm font-semibold opacity-90">Food Capacity</p></div>
+    <div><p class="text-3xl font-extrabold">Knob</p><p class="text-sm font-semibold opacity-90">Portion Control</p></div>
+    <div><p class="text-3xl font-extrabold">Knob</p><p class="text-sm font-semibold opacity-90">Timeout Control</p></div>
+    <div><p class="text-3xl font-extrabold">Always On</p><p class="text-sm font-semibold opacity-90">Mains Powered</p></div>
+  </div>
+</section>
+
+<!-- Product images strip -->
+<section class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+  <h2 class="text-3xl font-extrabold text-center mb-10">Designed for pets. Built for you.</h2>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <!-- PRODUCT IMAGE PLACEHOLDERS: replace with assets/img/pedro-1.jpg etc -->
+    <div class="aspect-square bg-stone-200 rounded-xl border-2 border-dashed border-stone-300 flex items-center justify-center text-stone-400 text-sm font-semibold">
+        <img src="assets/2.png" alt="Pedro pet feeder front view" class="object-cover w-full h-full rounded-xl" />
+    </div>
+    <div class="aspect-square bg-stone-200 rounded-xl border-2 border-dashed border-stone-300 flex items-center justify-center text-stone-400 text-sm font-semibold">
+        <img src="assets/3.png" alt="Pedro pet feeder front view" class="object-cover w-full h-full rounded-xl" />
+    </div>
+    <div class="aspect-square bg-stone-200 rounded-xl border-2 border-dashed border-stone-300 flex items-center justify-center text-stone-400 text-sm font-semibold">
+        <img src="assets/9.png" alt="Pedro pet feeder front view" class="object-cover w-full h-full rounded-xl" />
+    </div>
+    <div class="aspect-square bg-stone-200 rounded-xl border-2 border-dashed border-stone-300 flex items-center justify-center text-stone-400 text-sm font-semibold">
+        <img src="assets/8.png" alt="Pedro pet feeder front view" class="object-cover w-full h-full rounded-xl" />
+    </div>
+  </div>
+  <div class="text-center mt-8">
+    <a href="pdp.html" class="text-coral-600 font-bold hover:underline">See full product details &amp; specs →</a>
+  </div>
+</section>
+
+<!-- Secondary banner -->
+<section class="bg-stone-100">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 text-center">
+    <h2 class="text-3xl font-extrabold mb-3">Be first in line.</h2>
+    <p class="text-stone-600 mb-2 max-w-xl mx-auto">Early waitlist members get launch-day pricing and priority shipping.</p>
+  </div>
+</section>
+
+<!-- Waitlist form -->
+<section id="waitlist" class="max-w-2xl mx-auto px-4 sm:px-6 py-16">
+  <div class="bg-white rounded-2xl shadow-xl border border-stone-200 p-8 sm:p-10">
+    <h2 class="text-2xl font-extrabold mb-2 text-center">Join the Waitlist</h2>
+    <p class="text-stone-600 text-center mb-6">Get notified the moment Pedro launches. This also subscribes you to our newsletter — unsubscribe anytime.</p>
+    <!-- Formspree endpoint: replace YOUR_FORMSPREE_ID_WAITLIST with your real Formspree form ID -->
+    <form action="https://formspree.io/f/mwlelloj" method="POST" class="flex flex-col gap-4">
+      <input type="hidden" name="source" value="waitlist" />
+      <label class="sr-only" for="wl-name">Name</label>
+      <input id="wl-name" type="text" name="name" placeholder="Your name" required
+        class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-coral-500" />
+      <label class="sr-only" for="wl-email">Email</label>
+      <input id="wl-email" type="email" name="email" placeholder="you@example.com" required
+        class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-coral-500" />
+      <label class="sr-only" for="wl-phone">Phone number</label>
+      <input id="wl-phone" type="tel" name="phone" placeholder="Phone number"
+        class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-coral-500" />
+      <button type="submit"
+        class="bg-coral-600 hover:bg-coral-500 text-white font-bold py-3 rounded-xl shadow transition">Join Waitlist</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-stone-900 text-stone-300">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 grid sm:grid-cols-3 gap-8">
+    <div>
+      <p class="text-xl font-extrabold text-white mb-2">Nomster 🐾</p>
+      <p class="text-sm">First product: Pedro</p>
+    </div>
+    <div>
+      <p class="font-bold text-white mb-2">Contact</p>
+      <p class="text-sm">+91 6388004370</p>
+      <p class="text-sm">Bengaluru, India</p>
+    </div>
+    <div>
+      <p class="font-bold text-white mb-2">Legal</p>
+      <ul class="text-sm space-y-1">
+        <li><a href="tnc.html" class="hover:text-coral-500">Terms &amp; Conditions</a></li>
+        <li><a href="privacy.html" class="hover:text-coral-500">Privacy Policy</a></li>
+        <li><a href="legal.html" class="hover:text-coral-500">Legal</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-stone-800 text-center text-sm py-4">
+    © 2026 Nomster. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+</script>
+</body>
+</html>
